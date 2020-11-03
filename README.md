@@ -27,7 +27,7 @@ engine will randomly generate the buildings in what ever order it wants.
 
 If I also have enough time I would like to try and create a day and night cycle where
 The car and buildings may look different in edition to haveing streetlights and the 
-carlights turned on during night time,
+carlights turned on during night time.
 
 
 
