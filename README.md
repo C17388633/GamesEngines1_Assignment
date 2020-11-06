@@ -3,6 +3,8 @@ Assignment for Games Engines 1
 
 Student Name: Killian Pogue
 Student Number: C17388633
+Class Group: DT228
+
 
 
 My Idea for this assignemnt is to create a game world in which you start off with a car.
@@ -26,7 +28,7 @@ engine will randomly generate the buildings in what ever order it wants.
 
 
 If I also have enough time I would like to try and create a day and night cycle where
-The car and buildings may look different in edition to haveing streetlights and the 
+The car and buildings may look different in edition to having streetlights and the 
 carlights turned on during night time.
 
 
