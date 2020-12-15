@@ -5,7 +5,7 @@ Student Name: Killian Pogue
 Student Number: C17388633
 Class Group: DT228
 
-
+//description
 
 My Idea for this assignemnt is to create a game world in which you start off with a car.
 This car will follow a procedurally generated road. 
@@ -32,5 +32,20 @@ The car and buildings may look different in edition to having streetlights and t
 carlights turned on during night time.
 
 
+//PARTS DEVELOPED BY MYSELF
+
+
+
+//PARTS INSPIRED BY OTHER EXAMPLES/SOURCES
+
+
+
+//WHAT I AM MOST PROUD OF
+
+
+INSTRUCTIONS WHEN RUNNING
+
+
+//youtube video
 
 
