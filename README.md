@@ -1,12 +1,33 @@
-# GamesEngines1_Assignment
+# Project Title
 Assignment for Games Engines 1 
 
 Student Name: Killian Pogue
 Student Number: C17388633
 Class Group: DT228
 
-//description
+# Description of the project
 
+My Idea for this assignemnt is to create a game world in which you start off with a car.
+This car will follow a procedurally generated road. 
+
+
+
+# Instructions for use
+
+
+
+# How it works
+
+
+# Youtube video
+
+# References
+
+
+# What I am most proud of
+
+
+# Proposal
 My Idea for this assignemnt is to create a game world in which you start off with a car.
 This car will follow a procedurally generated road. 
 
@@ -32,21 +53,18 @@ The car and buildings may look different in edition to having streetlights and t
 carlights turned on during night time.
 
 
+
+# Others
 //PARTS DEVELOPED BY MYSELF
 Assests created by me were 
 * A car
 
-
 //PARTS INSPIRED BY OTHER EXAMPLES/SOURCES
+* CarController from lab...
 
 
 
-//WHAT I AM MOST PROUD OF
 
 
-INSTRUCTIONS WHEN RUNNING
-
-
-//youtube video
 
 
