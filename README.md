@@ -60,7 +60,8 @@ Assests created by me were
 * A car
 
 //PARTS INSPIRED BY OTHER EXAMPLES/SOURCES
-* CarController from lab...
+* CarController from lab 4
+* Camera control on the car target from lab 4
 
 
 
