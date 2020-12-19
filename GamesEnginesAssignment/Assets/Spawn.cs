@@ -9,14 +9,15 @@ public class Spawn : MonoBehaviour
     public GameObject prefab2;
     public int radius = 20;
     public float theta = 10;
+    public int numPrefabs = 10;
     // Start is called before the first frame update
     void Start()
     {
         
         for(int i = 1 ; i <= loops ; i ++)
         {
-            int numPrefabs = (int)(2.0f * Mathf.PI * i * radius);
-            //int numPrefabs = 5;
+            //numPrefabs = (int)(2.0f * Mathf.PI * i * radius);
+            
             //float theta = Mathf.PI * 2.0f / ((float)numPrefabs);
             
             for (int j = 0 ; j < numPrefabs ; j ++)
