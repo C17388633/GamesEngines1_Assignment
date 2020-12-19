@@ -21,8 +21,9 @@ This car will follow a procedurally generated road.
 
 # Youtube video
 
-# References
 
+# References
+* https://github.com/skooter500/GE1-2020-2021
 
 # What I am most proud of
 
@@ -58,6 +59,8 @@ carlights turned on during night time.
 //PARTS DEVELOPED BY MYSELF
 Assests created by me were 
 * A car
+* Skyscraper
+* House
 
 //PARTS INSPIRED BY OTHER EXAMPLES/SOURCES
 * CarController from lab 4
