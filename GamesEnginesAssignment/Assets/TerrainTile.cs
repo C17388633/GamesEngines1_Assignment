@@ -109,8 +109,8 @@ public class TerrainTile : MonoBehaviour
     public static float SampleCell1(float x, float y)
     {
         return (
-         Mathf.PerlinNoise(10000 + x / 100, 10000 + y / 100) * 100)
-         + (Mathf.PerlinNoise(10000 + x / 1000, 10000 + y / 1000) * 300)
+         Mathf.PerlinNoise(1000 + x / 100, 1000 + y / 100) * 100)
+         + (Mathf.PerlinNoise(1000 + x / 1000, 1000 + y / 1000) * 300)
          + (Mathf.PerlinNoise(1000 + x / 5, 100 + y / 5) * 2);
     }
 
@@ -118,7 +118,7 @@ public class TerrainTile : MonoBehaviour
     public static float SampleCell2(float x, float y)
     {
         float flatness = 0.2f;
-        float noise = Mathf.PerlinNoise(10000 + x / 100, 10000 + y / 100);
+        float noise = Mathf.PerlinNoise(1000 + x / 100, 1000 + y / 100);
         if (noise > 0.5f + flatness)
         {
             noise = noise - flatness;
@@ -138,7 +138,7 @@ public class TerrainTile : MonoBehaviour
     public static float SampleCell3(float x, float y)
     {
         float flatness = 0.2f;
-        float noise = Mathf.PerlinNoise(10000 + x / 100, 10000 + y / 100);
+        float noise = Mathf.PerlinNoise(1000 + x / 100, 1000 + y / 100);
         if (noise > 0.5f + flatness)
         {
             noise = noise - flatness;
@@ -158,7 +158,7 @@ public class TerrainTile : MonoBehaviour
     public static float SampleCell4(float x, float y)
     {
         float flatness = 0.2f;
-        float noise = Mathf.PerlinNoise(10000 + x , 10000 + y );
+        float noise = Mathf.PerlinNoise(1000 + x , 1000 + y );
         if (noise > 0.5f + flatness)
         {
             noise = noise - flatness;

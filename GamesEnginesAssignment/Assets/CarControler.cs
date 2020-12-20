@@ -5,8 +5,10 @@ using UnityEngine;
 public class CarControler : MonoBehaviour
 {
 
-    public float speed = 5;
+    public float speed = 15;
     public float rotSpeed = 100;
+    //adjust how far the car will rise upwards
+    public float levitateSpeed = .001f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +24,18 @@ public class CarControler : MonoBehaviour
 
         float r = Input.GetAxis("Horizontal");
         transform.Rotate(0, r * rotSpeed * Time.deltaTime, 0);
+
+        //fly car
+        if(Input.GetKey(KeyCode.Space))
+        {
+            transform.Translate(0, levitateSpeed , 0);
+        }
+        
+        //rotate car if flipped over
+        if(Input.GetKeyDown("q"))
+        {
+            transform.Rotate(0, 0, r * rotSpeed * Time.deltaTime);
+            GameManager.Log("rotating car");
+        }
     }
 }
