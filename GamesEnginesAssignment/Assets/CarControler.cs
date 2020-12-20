@@ -29,13 +29,15 @@ public class CarControler : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
             transform.Translate(0, levitateSpeed , 0);
+            GameManager.Log("Going up");
         }
         
         //rotate car if flipped over
-        if(Input.GetKeyDown("q"))
+        if(Input.GetKey("q"))
         {
-            transform.Rotate(0, 0, r * rotSpeed * Time.deltaTime);
-            GameManager.Log("rotating car");
+            //transform.Rotate(0, 0, r * rotSpeed * Time.deltaTime);
+            transform.Rotate (new Vector3 (0, 0, rotSpeed) * Time.deltaTime);
+            GameManager.Log("Rotating car");
         }
     }
 }
