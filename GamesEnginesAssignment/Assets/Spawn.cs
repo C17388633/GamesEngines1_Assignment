@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public int loops = 3;
+    public int loops = 20;
     public GameObject prefab1;
     public GameObject prefab2;
     public int radius = 20;
-    public float theta = 10;
-    public int numPrefabs = 10;
+    public float theta = 5;
+    public int numPrefabs = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,14 +33,14 @@ public class Spawn : MonoBehaviour
                 {
                     case 1:
                         g = GameObject.Instantiate<GameObject>(prefab1);
-                        g.transform.position = new Vector3(x, 0, z);
+                        g.transform.position = new Vector3(x, 300, z);
                         g.GetComponent<Renderer>().material.color =
                             Color.HSVToRGB(j / (float) numPrefabs, 1, 1);
                         g.transform.parent = this.transform;
                         break;
                     case 2:
                         g = GameObject.Instantiate<GameObject>(prefab2);
-                        g.transform.position = new Vector3(x, 0, z);
+                        g.transform.position = new Vector3(x, 300, z);
                         g.GetComponent<Renderer>().material.color =
                             Color.HSVToRGB(j / (float) numPrefabs, 1, 1);
                         g.transform.parent = this.transform;
