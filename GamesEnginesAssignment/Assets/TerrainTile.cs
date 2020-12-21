@@ -174,7 +174,7 @@ public class TerrainTile : MonoBehaviour
         
         return (noise * 300) + (Mathf.PerlinNoise(1000 + x / 5, 100 + y / 5) * 2);
     }
-    float t = 0;
+    //float t = 0;
 
     //map function
     public static float Map(float value, float r1, float r2, float m1, float m2)
