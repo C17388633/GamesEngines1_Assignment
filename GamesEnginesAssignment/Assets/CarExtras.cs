@@ -41,7 +41,7 @@ public class CarExtras : MonoBehaviour
 
         //Get angle
         float angle = Mathf.Acos(Vector3.Dot(transform.forward, toPlayer) / toPlayer.magnitude) * Mathf.Rad2Deg;
-        GameManager.Log("Angle to player 1: " + angle);
+        GameManager.Log("Angle to Goal: " + angle);
 
     }
 
