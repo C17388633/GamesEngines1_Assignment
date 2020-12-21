@@ -6,9 +6,10 @@ public class CarControler : MonoBehaviour
 {
 
     public float speed = 5;
-    public float rotSpeed = 100;
+    public float rotSpeed1 = 100;
+    public float rotSpeed2 = 150;
     //adjust how far the car will rise upwards
-    public float levitateSpeed = 100f;
+    public float levitateSpeed = 20f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,13 @@ public class CarControler : MonoBehaviour
         transform.Translate(0, 0, c * speed * Time.deltaTime);
 
         float r = Input.GetAxis("Horizontal");
-        transform.Rotate(0, r * rotSpeed * Time.deltaTime, 0);
+        transform.Rotate(0, r * rotSpeed1 * Time.deltaTime, 0);
 
         //fly car
         if(Input.GetKey(KeyCode.Space))
         {
-            //transform.Translate (new Vector3 (0, levitateSpeed, 0) * Time.deltaTime);
+            //go upwards in terms of the worlds Y-axis
+            transform.Translate (Vector3.up * Time.deltaTime * levitateSpeed, Space.World);
             GameManager.Log("Going up");
         }
         
@@ -36,7 +38,7 @@ public class CarControler : MonoBehaviour
         if(Input.GetKey("q"))
         {
             //transform.Rotate(0, 0, r * rotSpeed * Time.deltaTime);
-            transform.Rotate (new Vector3 (0, 0, rotSpeed) * Time.deltaTime);
+            transform.Rotate (new Vector3 (0, 0, rotSpeed2) * Time.deltaTime);
             GameManager.Log("Flipping car");
         }
     }
