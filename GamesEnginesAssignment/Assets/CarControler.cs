@@ -10,8 +10,7 @@ public class CarControler : MonoBehaviour
     public float rotSpeed2 = 150;
     //adjust how far the car will rise upwards
     public float levitateSpeed = 20f;
-    public float distance;
-    public Transform goal;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +21,6 @@ public class CarControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get distance to Goal
-        distance = Vector3.Distance(goal.position, transform.position);
-        GameManager.Log("Distance to Goal is: " + distance);
-
 
         float c = Input.GetAxis("Vertical");
         transform.Translate(0, 0, c * speed * Time.deltaTime);
@@ -50,10 +45,6 @@ public class CarControler : MonoBehaviour
         }
 
 
-
-
-
-       
 
     }
 

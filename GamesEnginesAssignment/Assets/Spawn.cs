@@ -7,6 +7,7 @@ public class Spawn : MonoBehaviour
     public int loops = 20;
     public GameObject prefab1;
     public GameObject prefab2;
+    public GameObject goalPrefab;
     public int radius = 20;
     public float theta = 5;
     public int numPrefabs = 20;
@@ -31,6 +32,7 @@ public class Spawn : MonoBehaviour
                 //switch for rng
                 switch (gNum)
                 {
+                    //generate the skyscrraper if 1
                     case 1:
                         g = GameObject.Instantiate<GameObject>(prefab1);
                         g.transform.position = new Vector3(x, 300, z);
@@ -38,6 +40,7 @@ public class Spawn : MonoBehaviour
                             Color.HSVToRGB(j / (float) numPrefabs, 1, 1);
                         g.transform.parent = this.transform;
                         break;
+                    //generate the house if 2
                     case 2:
                         g = GameObject.Instantiate<GameObject>(prefab2);
                         g.transform.position = new Vector3(x, 300, z);
@@ -49,10 +52,20 @@ public class Spawn : MonoBehaviour
                         break;
                 }
 
-
-                
             }
         }
+
+
+        //Spawn goal
+        GameObject goal = GameObject.Instantiate<GameObject>(prefab1);
+        int Goalx = Random.Range(-100, 100);
+        int Goalz = Random.Range(-100, 100);
+        goal.transform.position = new Vector3(Goalx, 300, Goalz);
+        goal.transform.parent = this.transform;
+
+
+
+
     }
 
     // Update is called once per frame
