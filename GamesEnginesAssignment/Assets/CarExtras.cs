@@ -22,14 +22,16 @@ public class CarExtras : MonoBehaviour
 
 
         // Get distance to Goal
-        distance = Vector3.Distance(goal.position, transform.position);
+        distance = Vector3.Distance( goal.transform.position, transform.position);
         GameManager.Log("Distance to Goal is: " + distance);
 
 
-        
+        GameManager.Log("Posistion x: " + goal.position.x + " position z: " + goal.position.z);
+        GameManager.Log("Posistion of you x: " + transform.position.x + " position z: " + transform.position.z);
 
         //Say if Goal is in front of you or behind you
-        Vector3 toPlayer = goal.position - transform.position;
+        /*
+        Vector3 toPlayer = goal.position - transform.position  ;
         if (Vector3.Dot(transform.forward, toPlayer) < 0)
         {
             GameManager.Log("Goal is behind you");
@@ -41,7 +43,9 @@ public class CarExtras : MonoBehaviour
 
         //Get angle
         float angle = Mathf.Acos(Vector3.Dot(transform.forward, toPlayer) / toPlayer.magnitude) * Mathf.Rad2Deg;
+        float a = Vector3.Angle(transform.forward, toPlayer);
         GameManager.Log("Angle to Goal: " + angle);
+        GameManager.Log("Angle to Goal: " + a);*/
 
     }
 

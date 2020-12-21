@@ -57,10 +57,10 @@ public class Spawn : MonoBehaviour
 
 
         //Spawn goal
-        GameObject goal = GameObject.Instantiate<GameObject>(prefab1);
-        int Goalx = Random.Range(-100, 100);
+        GameObject goal = GameObject.Instantiate<GameObject>(goalPrefab);
+        int Goalx = Random.Range(-100, 200);
         int Goalz = Random.Range(-100, 100);
-        goal.transform.position = new Vector3(Goalx, 300, Goalz);
+        goal.transform.position = new Vector3(Goalx, 200, Goalz);
         goal.transform.parent = this.transform;
 
 
