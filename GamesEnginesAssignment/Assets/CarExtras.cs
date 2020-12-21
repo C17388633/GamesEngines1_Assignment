@@ -6,12 +6,15 @@ public class CarExtras : MonoBehaviour
 {
     public float distance;
     public Transform goal;
+    public Transform G;
     public float points = 0;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         
+        G = GameObject.FindGameObjectWithTag("Goal").transform;
     }
 
     // Update is called once per frame
@@ -22,11 +25,11 @@ public class CarExtras : MonoBehaviour
 
 
         // Get distance to Goal
-        distance = Vector3.Distance( goal.transform.position, transform.position);
+        distance = Vector3.Distance( G.position, transform.position);
         GameManager.Log("Distance to Goal is: " + distance);
 
 
-        GameManager.Log("Posistion x: " + goal.position.x + " position z: " + goal.position.z);
+        GameManager.Log("Posistion x: " + G.position.x + " position z: " + G.position.z);
         GameManager.Log("Posistion of you x: " + transform.position.x + " position z: " + transform.position.z);
 
         //Say if Goal is in front of you or behind you
@@ -49,8 +52,18 @@ public class CarExtras : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision c)
+    
+
+
+    void OnTriggerEnter(Collider c)
     {
+        Debug.Log("Triggered with: " + c.gameObject.tag);
+        
+    }
+
+    void OnTriggerStay(Collider c)
+    {
+        Debug.Log("Stay with: " + c.gameObject.tag);
         if (c.gameObject.tag == "Goal")
         {
             GameManager.Log("You have hit the goal!!!");
@@ -58,7 +71,9 @@ public class CarExtras : MonoBehaviour
         }
     }
 
-
-
+    void OnTriggerExit(Collider c)
+    {
+        Debug.Log("No longer Triggered with: " + c.gameObject.tag);
+    }
 
 }

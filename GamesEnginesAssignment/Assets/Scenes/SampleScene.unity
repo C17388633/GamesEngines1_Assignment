@@ -840,6 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   goal: {fileID: 150040711047081329, guid: 98998860a82e69041954eb116061704a, type: 3}
+  G: {fileID: 150040711047081329, guid: 98998860a82e69041954eb116061704a, type: 3}
   points: 0
 --- !u!54 &1661646783
 Rigidbody:
