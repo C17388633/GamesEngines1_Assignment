@@ -15,6 +15,15 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         
+        //Spawn goal
+        GameObject goal = GameObject.Instantiate<GameObject>(goalPrefab);
+        int Goalx = Random.Range(-100, 200);
+        int Goalz = Random.Range(-150, 150);
+        goal.transform.position = new Vector3(Goalx, 170, Goalz);
+        goal.transform.parent = this.transform;
+
+
+
         for(int i = 1 ; i <= loops ; i ++)
         {
             //numPrefabs = (int)(2.0f * Mathf.PI * i * radius);
@@ -54,16 +63,6 @@ public class Spawn : MonoBehaviour
 
             }
         }
-
-
-        //Spawn goal
-        GameObject goal = GameObject.Instantiate<GameObject>(goalPrefab);
-        int Goalx = Random.Range(-100, 200);
-        int Goalz = Random.Range(-100, 100);
-        goal.transform.position = new Vector3(Goalx, 200, Goalz);
-        goal.transform.parent = this.transform;
-
-
 
 
     }

@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour {
     public void OnGUI()
     {
         
-        GUI.color = Color.green;
+        GUI.color = Color.red;
+        GUI.Box(new Rect(0, 0, 300, 110), "" ) ; 
         GUI.Label(new Rect(0, 0, Screen.width, Screen.height), "" + message);
         if (Event.current.type == EventType.Repaint)
         {
