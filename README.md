@@ -12,14 +12,52 @@ comes from this abondoned settlement after the "E.V.A." incident on the planet T
 Your goal is to reach the last known position of the signal and retreive any data from source.
 Good luck!
 
+![Goal](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/MainImage.PNG) 
+
+
 
 The Goal is shown below:
+
 ![Goal](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/Gaol.PNG) 
 
 
+This starts with a car on a ramp. the car goes down the ramp in this procedurally generate world.
+A spawnwer spawns  house and skyscraper assets as well as the goal in a random location.
+
+
+
+|Assets |Created by |
+|-----------|-----------|
+| Car | Me|
+| Skyscraper|Me |
+| House|Me |
+| Goal|Me |
+| platform/ramp|Me |
+| carController Script|Me |
+| carExtras Script|Me |
+| CamControl|https://github.com/skooter500/GE1-2020-2021 |
+| CamFollow|https://github.com/skooter500/GE1-2020-2021 |
+| GameManager|Me |
+| InfiniteTerrain|https://github.com/skooter500/GE1-2020-2021 |
+| Spawn|Me |
+| TerrainTile|https://github.com/skooter500/GE1-2020-2021 |
+
+![Car](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/Car.PNG) 
+![House](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/House.PNG) 
+![Skyscraper](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/Skyscraper.PNG) 
+![Ramp](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/Ramp.PNG) 
+
+
+
 # Instructions for use
+When playing here are the controls.
 
-
+|Control |Action |
+|-----------|-----------|
+|W/S | Move forwards / backwards |
+|A/D| Rotate left/right |
+|"space"| jump |
+|Q| flip over car incase it goes upside down |
 
 # How it works
 
@@ -57,23 +95,6 @@ engine will randomly generate the buildings in what ever order it wants.
 If I also have enough time I would like to try and create a day and night cycle where
 The car and buildings may look different in edition to having streetlights and the 
 carlights turned on during night time.
-
-
-
-# Others
-//PARTS DEVELOPED BY MYSELF
-Assests created by me were 
-* A car
-* Skyscraper
-* House
-
-//PARTS INSPIRED BY OTHER EXAMPLES/SOURCES
-* CarController from lab 4
-* Camera control on the car target from lab 4
-
-
-
-
 
 
 
