@@ -17,7 +17,7 @@ public class InfiniteTerrain : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        //get terrain tile
         TerrainTile tt = tilePrefab.GetComponent<TerrainTile>();
         if (tt != null)
         {

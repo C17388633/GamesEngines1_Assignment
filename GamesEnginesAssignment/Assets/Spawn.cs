@@ -17,25 +17,27 @@ public class Spawn : MonoBehaviour
         
         //Spawn goal
         GameObject goal = GameObject.Instantiate<GameObject>(goalPrefab);
-        int Goalx = Random.Range(-100, 200);
+        //spawn goal into the this range for x and z axis
+        int Goalx = Random.Range(-100, 300);
         int Goalz = Random.Range(-150, 150);
-        goal.transform.position = new Vector3(Goalx, 170, Goalz);
+        //put the goal at these coordinates
+        goal.transform.position = new Vector3(Goalx, 200, Goalz);
         goal.transform.parent = this.transform;
 
 
-
+        //going thorugh the loops
         for(int i = 1 ; i <= loops ; i ++)
         {
-            //numPrefabs = (int)(2.0f * Mathf.PI * i * radius);
-            
-            //float theta = Mathf.PI * 2.0f / ((float)numPrefabs);
-            
+            //for each prefab
             for (int j = 0 ; j < numPrefabs ; j ++)
             {
+                //calculate angle
                 float angle  = j * theta; 
+                //calculate position
                 float x = Mathf.Sin(angle) * radius * (i) * 1.1f;
                 float z = Mathf.Cos(angle) * radius * (i) * 1.1f;
                 
+                //rng on what is to spawn
                 int gNum = Random.Range(0,3);
                 GameObject g;
                 //switch for rng
@@ -57,6 +59,7 @@ public class Spawn : MonoBehaviour
                             Color.HSVToRGB(j / (float) numPrefabs, 1, 1);
                         g.transform.parent = this.transform;
                         break;
+                    // spawn nothing otherwise.
                     default:
                         break;
                 }

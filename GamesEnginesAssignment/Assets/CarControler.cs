@@ -21,14 +21,16 @@ public class CarControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //got forward / backwards
         float c = Input.GetAxis("Vertical");
         transform.Translate(0, 0, c * speed * Time.deltaTime);
 
+        //roate left / right
         float r = Input.GetAxis("Horizontal");
         transform.Rotate(0, r * rotSpeed1 * Time.deltaTime, 0);
 
-        //fly car
+        //fly car / car jump
+        //Hold space
         if(Input.GetKey(KeyCode.Space))
         {
             //go upwards in terms of the worlds Y-axis
@@ -37,14 +39,13 @@ public class CarControler : MonoBehaviour
         }
         
         //flip over car if upside down
+        //Hold Q
         if(Input.GetKey("q"))
         {
             //transform.Rotate(0, 0, r * rotSpeed * Time.deltaTime);
             transform.Rotate (new Vector3 (0, 0, rotSpeed2) * Time.deltaTime);
             GameManager.Log("Flipping car");
         }
-
-
 
     }
 
