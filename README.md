@@ -7,9 +7,14 @@ Class Group: DT228
 
 # Description of the project
 
-My Idea for this assignemnt is to create a game world in which you start off with a car.
-This car will follow a procedurally generated road. 
+The year is 40XX. A strange signal has been picked up by the G.F.S. Aether. The orgin of which
+comes from this abondoned settlement after the "E.V.A." incident on the planet Tacamo.
+Your goal is to reach the last known position of the signal and retreive any data from source.
+Good luck!
 
+
+The Goal is shown below:
+![Goal](/images/Goal.png) 
 
 
 # Instructions for use
