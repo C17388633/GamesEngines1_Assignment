@@ -14,7 +14,7 @@ Good luck!
 
 
 The Goal is shown below:
-![Goal](/GamesEnginesAssignment/images/Goal.png) 
+![Goal](https://github.com/C17388633/GamesEngines1_Assignment/blob/main/GamesEnginesAssignment/images/Gaol.PNG) 
 
 
 # Instructions for use
