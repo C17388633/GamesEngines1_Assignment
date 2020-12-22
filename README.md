@@ -1,8 +1,10 @@
-# Project Title
+# Explore the Tacamo system
 Assignment for Games Engines 1 
 
 Student Name: Killian Pogue
+
 Student Number: C17388633
+
 Class Group: DT228
 
 # Description of the project
@@ -33,8 +35,8 @@ A spawnwer spawns  house and skyscraper assets as well as the goal in a random l
 | House|Me |
 | Goal|Me |
 | platform/ramp|Me |
-| carController Script|Me |
-| carExtras Script|Me |
+| CarController Script|Me |
+| CarExtras Script|Me |
 | CamControl|https://github.com/skooter500/GE1-2020-2021 |
 | CamFollow|https://github.com/skooter500/GE1-2020-2021 |
 | GameManager|Me |
@@ -55,9 +57,9 @@ When playing here are the controls.
 |Control |Action |
 |-----------|-----------|
 |W/S | Move forwards / backwards |
-|A/D| Rotate left/right |
-|"space"| jump |
-|Q| flip over car incase it goes upside down |
+|A/D| Rotate left / right |
+|"space"| Jump |
+|Q| Flip over car incase it goes upside down |
 
 # How it works
 
@@ -69,10 +71,15 @@ When playing here are the controls.
 * https://github.com/skooter500/GE1-2020-2021
 
 # What I am most proud of
+I am most proud of :
 
+* Having abetter understanding of how the Unity Engine works.
+* Being able to create a basic concept for a game.
+* Making the lights work for the ca.
+* Being able to configure the jumping and the flipping over of the car after many hours trying to get it working correctly..
 
 # Proposal
-My Idea for this assignemnt is to create a game world in which you start off with a car.
+My Idea for this assignment is to create a game world in which you start off with a car.
 This car will follow a procedurally generated road. 
 
 This road will be loaded into pieces such as:
