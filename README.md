@@ -20,7 +20,7 @@ This car will follow a procedurally generated road.
 
 
 # Youtube video
-
+[![YouTube](http://img.youtube.com/vi/AZE4htRDQn0/0.jpg)](https://youtu.be/AZE4htRDQn0)
 
 # References
 * https://github.com/skooter500/GE1-2020-2021
